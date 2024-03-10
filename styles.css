@@ -1,0 +1,223 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(fonts/TTLakes-Regular.eot);
+    src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url(fonts/TTLakes-Regular.woff) format('woff'),
+    url(fonts/TTLakes-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(fonts/TTLakes-Medium.eot);
+    src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url(fonts/TTLakes-Medium.woff) format('woff'),
+    url(fonts/TTLakes-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(fonts/TTLakes-Bold.eot);
+    src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url(fonts/TTLakes-Bold.woff) format('woff'),
+    url(fonts/TTLakes-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    color: #1B1C21;
+    background: #FFFFFF;
+    min-width: 320px;
+}
+
+.info-container {
+    width: 320px;
+    height: 100%;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    background: #fff;
+    /* transform: rotate(-180deg); */
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 23px 24px;
+}
+
+.info-header__left-part {
+    display: flex;
+    align-items: center;
+}
+
+.info-header__burger {
+    background: #FF3E79 url(images/burger_.svg) no-repeat center;
+    margin-right: 17px;
+}
+
+.button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.info-header__search {
+    background: #FF3E79 url(images/search_.svg) no-repeat center;
+}
+
+.navigation-wrapper {
+margin-bottom: 268px;
+}
+
+.navigation__link {
+    display: block;
+    padding-left: 24px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease-in-out;
+}
+.navigation__link:last-child {
+    margin-bottom: 0;
+}
+
+.link-decoration {
+    position: relative;
+    color: #7E7E82;
+}
+
+.link-decoration::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-radius: 0 4px 4px 0;
+}
+
+.info-footer__button {
+    display: flex;
+    column-gap: 16px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.info-footer__tel {
+    background: #FF3E79 url(images/tel.svg) no-repeat center;
+}
+
+.info-footer__chat {
+    background: #FF3E79 url(images/chat_.svg) no-repeat center;
+}
+
+.info-footer__profile {
+    background: #FF3E79 url(images/profile_.svg) no-repeat center;
+}
+
+.info-footer__contact-mail {
+    padding-left: 24px;
+    display: block;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 150%;
+    margin-bottom: 12px;
+}
+
+.info-footer__contact-tel {
+    display: block;
+    padding-left: 24px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: -0.6px;
+    margin-bottom: 40px;
+}
+
+.btn-reset {
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.language {
+    display: flex;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    column-gap: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.language__ru {
+    color: #7E7E82;
+    cursor: pointer;
+}
+
+.language__en {
+    cursor: pointer;
+}
+
+.language__ch {
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.navigation__link:hover {
+    opacity: 0.5;
+}
+
+.btn-reset::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #1B1C21;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-reset:hover::before {
+    transform: scale(1);
+}
