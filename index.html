@@ -8,46 +8,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
         <aside class="info">
-            <div class="info-container">
-                <header class="info-header">
-                    <div class="info-header__left-part">
-                        <button class="info-header__burger button"></button>
-                        <a href="/" class="header-logo">
-                            <img class="header-logo__img" src="images/logo.svg" alt="Логотип">
+            <div class="info__container">
+                <header class="info__header">
+                    <div class="info__header-left">
+                        <button class="info__header-burger button"></button>
+                        <a href="/" class="info__header-logo">
+                            <img class="info__logo-img" src="images/logo.svg" alt="Логотип">
                         </a>
                     </div>
-                    <button class="info-header__search button"></button>
+                    <button class="info__header-search button"></button>
                 </header>
                 <nav class="navigation">
-                    <div class="navigation-wrapper">
-                        <a class="navigation__link link-decoration" href="#">Ремонт техники</a>
-                        <a class="navigation__link" href="#">Услуги и сервисы</a>
-                        <a class="navigation__link" href="#">Корпоративным клиентам</a>
-                        <a class="navigation__link" href="#">Продавцам техники</a>
-                        <a class="navigation__link" href="#">Партнерам</a>
-                        <a class="navigation__link" href="#">Производителям</a>
-                        <a class="navigation__link" href="#">Наши сервисные центры</a>
-                        <a class="navigation__link" href="#">Контакты</a>
-                    </div>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a class="navigation__link link-decoration" href="#">Ремонт техники</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Услуги и сервисы</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Корпоративным клиентам</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Продавцам техники</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Партнерам</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Производителям</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Наши сервисные центры</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+                        </ul>
                 </nav>
-                <footer class="info-footer">
-                    <div class="info-footer__button">
-                        <button class="info-footer__tel button"></button>
-                        <button class="info-footer__chat button"></button>
-                        <button class="info-footer__profile button"></button>
+                <footer class="info__footer">
+                    <div class="info__footer-button">
+                        <button class="info__footer-tel button"></button>
+                        <button class="info__footer-chat button"></button>
+                        <button class="info__footer-profile button"></button>
                     </div>
-                    <a class="info-footer__contact-mail" href="mailto:mail@cps.com">mail@cps.com</a>
-                    <a class="info-footer__contact-tel" href="tel:8(800)890-89-00">8 800 890 8900</a>
-                    <div class="info-footer__language language">
-                        <button class="language__ru btn-reset">RU</button>
-                        <button class="language__en btn-reset">EN</button>
-                        <button class="language__ch btn-reset">CH</button>
+                    <a class="info__footer-mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                    <a class="info__footer-phone" href="tel:8(800)890-89-00">8 800 890 8900</a>
+                    <div class="info__footer-language">
+                        <button class="info__footer-lang">RU</button>
+                        <button class="info__footer-lang">EN</button>
+                        <button class="info__footer-lang">CH</button>
                     </div>
                 </footer>
             </div>
         </aside>
-    </div>
 </body>
 </html>
